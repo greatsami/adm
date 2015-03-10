@@ -1,0 +1,1855 @@
+
+html
+{
+padding:0px;
+margin:0px;
+}
+
+*
+{
+padding:0px;
+margin:0px;
+}
+
+body 
+{
+width:100%;
+height:100%;
+background:url(../img/320/bg.jpg) no-repeat;
+}
+
+ul, ol, li
+{
+list-style:none; 	
+padding:0px;
+margin:0px;
+text-align:center;
+}
+
+img
+{
+padding:0px;
+margin:0px;
+border:none;
+}
+
+
+
+
+.ip-header 
+{
+position: fixed;
+top: 0;
+z-index: 100;
+min-height: 460px;
+width: 100%;
+height: 100%;
+background:url(../img/320/bg.jpg) no-repeat;
+}
+
+.ip-logo,.ip-loader 
+{
+position: absolute;
+left: 0;
+width: 100%;
+opacity: 0;
+cursor: default;
+pointer-events: none;
+}
+
+.ip-logo 
+{
+top: -70px;
+width: 100%;
+height: 100%;
+-webkit-transform: translate3d(0,30%,0);
+transform: translate3d(0,30%,0);
+margin:0px auto 0px auto;
+background:url(../img/320/logo.png) center 20% no-repeat;
+}
+
+.ip-loader 
+{
+bottom: 20%;
+}
+
+.ip-header .ip-inner 
+{
+display: block;
+margin: 0 auto;
+}
+
+.ip-header .ip-logo svg 
+{
+position: absolute;
+min-height: 200px;
+height: 25%;
+}
+
+.loaded .ip-header .ip-logo svg 
+{
+max-height: 300px;
+}
+
+.ip-header .ip-logo svg path 
+{
+fill: #534f45;
+}
+
+.ip-header .ip-loader svg path 
+{
+fill: none;
+stroke-width: 6;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circlebg 
+{
+stroke: #ddd;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle 
+{
+-webkit-transition: stroke-dashoffset 0.2s;
+transition: stroke-dashoffset 0.2s;
+stroke: #534f45;
+}
+
+.loading .ip-logo,.loading .ip-loader 
+{
+opacity: 1;
+}
+
+.loading .ip-logo 
+{
+-webkit-animation: animInitialLogo 1s cubic-bezier(0.7,0,0.3,1) both;
+animation: animInitialLogo 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+@-webkit-keyframes animInitialLogo 
+{
+from { opacity: 0; }
+}
+
+@keyframes animInitialLogo 
+{
+from { opacity: 0; }
+}
+
+.loading .ip-loader 
+{
+-webkit-animation: animInitialLoader 1s cubic-bezier(0.7,0,0.3,1) both;
+animation: animInitialLoader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+@-webkit-keyframes animInitialLoader 
+{
+from { opacity: 0; -webkit-transform: scale3d(0.5,0.5,1); }
+}
+
+@keyframes animInitialLoader 
+{
+from { opacity: 0; -webkit-transform: scale3d(0.5,0.5,1); transform: scale3d(0.5,0.5,1); }
+}
+
+.loaded .ip-logo,.loaded .ip-loader 
+{
+opacity: 1;
+}
+
+.loaded .ip-logo 
+{
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLogo 
+{
+to { -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); }
+}
+
+@keyframes animLoadedLogo 
+{
+to { -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); }
+}
+
+.loaded .ip-loader 
+{
+-webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader 
+{
+to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+@keyframes animLoadedLoader 
+{
+to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+.loaded .ip-logo svg path 
+{
+-webkit-transition: all 0.5s ease 0.3s;
+transition: all 0.5s ease 0.3s;
+fill: #fff;
+}
+
+.loaded .ip-header 
+{
+-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader 
+{
+to { -webkit-transform: translate3d(0,100%,0); }
+}
+
+@keyframes animLoadedHeader
+{
+to { -webkit-transform: translate3d(0,100%,0); transform: translate3d(0,100%,0); }
+}
+
+.no-js .ip-header 
+{
+position: relative;
+min-height: 0px;
+}
+
+.no-js .ip-header .ip-logo 
+{
+margin-top: 20px;
+height: 180px;
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+
+.no-js .ip-header .ip-logo svg path 
+{
+fill: #fff;
+}
+
+
+
+
+@media only screen and (max-width: 480px) 
+{
+
+/*---------------------- First Screen -----------------------*/
+
+
+.main-logo 
+{
+display:block;
+position:relative;
+width:143px;
+height:153px;
+margin:30px auto 0px auto;
+background:url(../img/320/logo.png) no-repeat;
+}
+
+.mail-button a
+{
+display:block;
+position:relative;
+width:460px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:45px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.mail-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+.about-button a
+{
+display:block;
+position:relative;
+width:460px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.about-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+
+.contact-button a
+{
+display:block;
+position:relative;
+width:460px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:-1px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.contact-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+.mail-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/mail-icon.png) no-repeat;
+}
+
+.about-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/about-icon.png) no-repeat;
+}
+
+.contact-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/contact-icon.png) no-repeat;
+}
+
+.thin-arrow 
+{
+display:block;
+position:relative;
+width:13px;
+height:26px;
+float:left;
+margin:13px 10px 0px 10px;
+background:url(../img/320/thin-arrow.png) no-repeat;
+}
+
+.Inquiry-button a
+{
+display:block;
+position:relative;
+width:448px;
+height:34px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:20px;
+padding:12px 10px 0px 0px;
+margin:20px auto 0px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #403c3c;
+background:url(../img/320/Inquiry-but.png) repeat-x;
+}
+
+.Inquiry-button a:hover 
+{
+background:url(../img/320/Inquiry-but.png) 0px -56px repeat-x;
+}
+
+.thik-arrow 
+{
+display:block;
+position:relative;
+width:20px;
+height:33px;
+float:left;
+margin:-4px 0px 0px 10px;
+opacity: 0.7;
+filter: alpha(opacity=70);
+background:url(../img/320/thik-arrow.png) no-repeat;
+}
+
+.footer 
+{
+display:block;
+position:relative;
+width:100%;
+height:40px;
+bottom:0px;
+left:0px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:center;
+line-height:40px;
+padding:0px 0px 0px 0px;
+margin:15px 0px 0px 0px;
+background:url(../img/320/footer.png) repeat-x;
+}
+
+
+/*---------------------- Inquiry Screen -----------------------*/
+
+
+.pass-continer 
+{
+display:block;
+position:relative;
+width:460px;
+height:40px;
+margin:70px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.pass-icon 
+{
+display:block;
+position:relative;
+width:27px;
+height:27px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/pass-icon.png) no-repeat;
+}
+
+.pass-textbox
+{
+display:block;
+position:relative;
+width:415px;
+height:40px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 40px 0px 0px;
+border:none;
+background:none;
+}
+
+.Inquiry-butt a
+{
+display:block;
+position:relative;
+width:452px;
+height:35px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:left;
+line-height:25px;
+padding:10px 0px 0px 10px;
+margin:0px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border-bottom:solid 1px #146335;
+border-top:none;
+background:url(../img/320/green-but.png) repeat-x;
+}
+
+.Inquiry-butt a:hover 
+{
+color:#fff;
+text-shadow: 0px 1px 1px #284635;
+background:url(../img/320/green-but.png) 0px -50px repeat-x;
+}
+
+.arrow-go 
+{
+display:block;
+position:relative;
+width:22px;
+height:17px;
+float:right;
+margin:3px 10px 0px 0px;
+background:url(../img/320/go-arrow.png) no-repeat;
+}
+
+.inquiry-pic 
+{
+display:block;
+position:relative;
+width:100%;
+height:179px;
+background:url(../img/480/inquiry-pic.png) no-repeat;
+}
+
+
+/*---------------------- Data Screen -----------------------*/
+
+.header-continer 
+{
+display:block;
+position:relative;
+width:100%;
+height:70px;
+background:url(../img/320/header-continer.png) repeat-x;
+}
+
+.small-logo 
+{
+display:block;
+position:relative;
+width:48px;
+height:50px;
+float:right;
+margin:8px 10px 0px 0px;
+background:url(../img/320/small-logo.png) no-repeat;
+}
+
+.header-sp 
+{
+display:block;
+position:relative;
+width:1px;
+height:50px;
+float:right;
+margin:8px 10px 0px 10px;
+opacity: 0.3;
+filter: alpha(opacity=30);
+background:#48453c;
+}
+
+.header-title 
+{
+display:block;
+position:relative;
+width:150px;
+height:20px;
+font:normal 20px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+float:right;
+text-align:right;
+margin:13px 0px 0px 0px;
+}
+
+.home-button a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:18px 10px 0px 10px;
+background:url(../img/320/home-icon.png) no-repeat;
+}
+
+.home-button a:hover 
+{
+background:url(../img/320/home-icon.png) 0px -32px no-repeat;
+}
+
+.about-pic 
+{
+display:block;
+position:relative;
+width:480px;
+height:179px;
+background:url(../img/480/about-pic.png) no-repeat;
+}
+
+
+.body-continer 
+{
+display:table;
+position:relative;
+width:460px;
+height:auto;
+min-height:100px;
+margin:10px auto 10px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.title-continer 
+{
+display:table;
+position:relative;
+width:450px;
+height:28px;
+font:normal 18px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:right;
+padding:8px 10px 0px 0px;
+line-height:20px;
+margin:10px auto 0px auto;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+
+.text-continer 
+{
+display:table;
+position:relative;
+width:440px;
+height:30px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+margin:0px 10px 0px 10px
+}
+
+/*---------------------- Contact Screen -----------------------*/
+
+.ucontact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:44px;
+margin:20px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.econtact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.idcontact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.pcontact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.scontact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.tcontact-continer 
+{
+display:block;
+position:relative;
+width:440px;
+height:100px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.contact-textbox
+{
+display:block;
+position:relative;
+width:390px;
+height:40px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 40px 0px 0px;
+border:none;
+background:none;
+}
+
+.lcontact-textbox
+{
+display:block;
+position:relative;
+width:422px;
+height:90px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 10px 0px 10px;
+border:none;
+overflow:hidden;
+background:none;
+}
+
+.name-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/user.png) no-repeat;
+}
+
+.email-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/email.png) no-repeat;
+}
+
+.id-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/id.png) no-repeat;
+}
+
+.phone-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/iphone.png) no-repeat;
+}
+
+.subject-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/subject.png) no-repeat;
+}
+
+.enter-butt a
+{
+display:block;
+position:relative;
+width:432px;
+height:30px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:left;
+line-height:22px;
+padding:10px 0px 0px 10px;
+margin:-1px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border-bottom:solid 1px #146335;
+border-top:none;
+z-index:10;
+background:url(../img/320/green-but.png) repeat-x;
+}
+
+.enter-butt a:hover 
+{
+color:#fff;
+text-shadow: 0px 1px 1px #284635;
+background:url(../img/320/green-but.png) 0px -50px repeat-x;
+}
+
+.contact-pic 
+{
+display:block;
+position:relative;
+width:100%;
+height:179px;
+background:url(../img/480/contact-pic.png) no-repeat;
+}
+
+.contact-info-continer 
+{
+display:table;
+position:relative;
+width:100%;
+height:auto;
+min-height:40px;
+margin:-1px 0px 0px 0px;
+padding:5px 0px 0px 0px;
+opacity: 0.7;
+filter: alpha(opacity=70);
+border:solid 1px #fff;
+border-left:none;
+border-right:none;
+background:#171100 url(../img/320/social-media.png) no-repeat;
+}
+
+.contact-info-title
+{
+font:normal 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-shadow: 0px 1px 2px #000;
+text-align:right;
+padding:0px 10px 2px 0px;
+}
+
+.contact-info-title span 
+{
+font:normal 14px Geneva, sans-serif;
+}
+
+.soical-info-continer 
+{
+display:table;
+position:relative;
+width:100%;
+height:auto;
+min-height:40px;
+margin:10px auto 10px auto;
+border:solid 1px #d9d5d2;
+border-right:none;
+border-left:none;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.facebook a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 10px;
+background:url(../img/320/facebook.png) no-repeat;
+}
+
+.facebook a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.twitter a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 47px;
+background:url(../img/320/twitter.png) no-repeat;
+}
+
+.twitter a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.instgram a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 83px;
+background:url(../img/320/instagram.png) no-repeat;
+}
+
+.instgram a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.youtube a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 120px;
+background:url(../img/320/youtube.png) no-repeat;
+}
+
+.youtube a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+/*---------------------- Define Screen -----------------------*/
+
+
+.define-continer 
+{
+display:table;
+position:relative;
+width:440px;
+height:auto;
+min-height:400px;
+margin:10px auto 10px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.define-title-continer 
+{
+display:block;
+position:relative;
+width:430px;
+height:30px;
+font:normal 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:right;
+padding:8px 10px 8px 0px;
+line-height:30px;
+margin:10px auto 0px auto;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+
+
+.define-text-continer 
+{
+display:table;
+position:relative;
+width:430px;
+height:auto;
+min-height:20px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+padding:5px 10px 0px 10px;
+margin:0px 0px 0px 0px
+}
+
+.define-bold-text-continer 
+{
+display:table;
+position:relative;
+width:430px;
+height:auto;
+min-height:20px;
+font:bold 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+padding:5px 10px 0px 0px;
+margin:0px 0px 0px 0px
+}
+
+
+}
+
+@media only screen and (max-width: 320px) 
+{
+
+/*---------------------- First Screen -----------------------*/
+
+.main-logo 
+{
+display:block;
+position:relative;
+width:143px;
+height:153px;
+margin:30px auto 0px auto;
+background:url(../img/320/logo.png) no-repeat;
+}
+
+.mail-button a
+{
+display:block;
+position:relative;
+width:280px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:45px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.mail-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+.about-button a
+{
+display:block;
+position:relative;
+width:280px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.about-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+
+.contact-button a
+{
+display:block;
+position:relative;
+width:280px;
+height:50px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:50px;
+padding:0px 10px 0px auto;
+margin:-1px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+background:url(../img/320/main-but.png) repeat-x;
+}   
+
+.contact-button a:hover
+{
+background:url(../img/320/main-but.png) 0px -53px repeat-x;
+}
+
+.mail-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/mail-icon.png) no-repeat;
+}
+
+.about-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/about-icon.png) no-repeat;
+}
+
+.contact-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:10px 10px 0px 10px;
+background:url(../img/320/contact-icon.png) no-repeat;
+}
+
+.thin-arrow 
+{
+display:block;
+position:relative;
+width:13px;
+height:26px;
+float:left;
+margin:13px 10px 0px 10px;
+background:url(../img/320/thin-arrow.png) no-repeat;
+}
+
+.Inquiry-button a
+{
+display:block;
+position:relative;
+width:268px;
+height:34px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:right;
+line-height:20px;
+padding:12px 10px 0px 0px;
+margin:20px auto 0px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #403c3c;
+background:url(../img/320/Inquiry-but.png) repeat-x;
+}
+
+.Inquiry-button a:hover 
+{
+background:url(../img/320/Inquiry-but.png) 0px -56px repeat-x;
+}
+
+.thik-arrow 
+{
+display:block;
+position:relative;
+width:20px;
+height:33px;
+float:left;
+margin:-4px 0px 0px 10px;
+opacity: 0.7;
+filter: alpha(opacity=70);
+background:url(../img/320/thik-arrow.png) no-repeat;
+}
+
+.footer 
+{
+display:block;
+position:relative;
+width:100%;
+height:40px;
+bottom:0px;
+left:0px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:center;
+line-height:40px;
+margin:15px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background:url(../img/320/footer.png) repeat-x;
+}
+
+
+/*---------------------- Inquiry Screen -----------------------*/
+
+
+.pass-continer 
+{
+display:block;
+position:relative;
+width:280px;
+height:40px;
+margin:50px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.pass-icon 
+{
+display:block;
+position:relative;
+width:27px;
+height:27px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/pass-icon.png) no-repeat;
+}
+
+.pass-textbox
+{
+display:block;
+position:relative;
+width:235px;
+height:40px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 40px 0px 0px;
+border:none;
+background:none;
+}
+
+.Inquiry-butt a
+{
+display:block;
+position:relative;
+width:272px;
+height:35px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:left;
+line-height:25px;
+padding:10px 0px 0px 10px;
+margin:0px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border-bottom:solid 1px #146335;
+border-top:none;
+background:url(../img/320/green-but.png) repeat-x;
+}
+
+.Inquiry-butt a:hover 
+{
+color:#fff;
+text-shadow: 0px 1px 1px #284635;
+background:url(../img/320/green-but.png) 0px -50px repeat-x;
+}
+
+.arrow-go 
+{
+display:block;
+position:relative;
+width:22px;
+height:17px;
+float:right;
+margin:3px 10px 0px 0px;
+background:url(../img/320/go-arrow.png) no-repeat;
+}
+
+.inquiry-pic 
+{
+display:block;
+position:relative;
+width:100%;
+height:119px;
+background:url(../img/320/inquiry-pic.png) no-repeat;
+}
+
+/*---------------------- Data Screen -----------------------*/
+
+.header-continer 
+{
+display:block;
+position:relative;
+width:100%;
+height:70px;
+background:url(../img/320/header-continer.png) repeat-x;
+}
+
+.small-logo 
+{
+display:block;
+position:relative;
+width:48px;
+height:50px;
+float:right;
+margin:8px 10px 0px 0px;
+background:url(../img/320/small-logo.png) no-repeat;
+}
+
+.header-sp 
+{
+display:block;
+position:relative;
+width:1px;
+height:50px;
+float:right;
+margin:8px 10px 0px 10px;
+opacity: 0.3;
+filter: alpha(opacity=30);
+background:#48453c;
+}
+
+.header-title 
+{
+display:block;
+position:relative;
+width:150px;
+height:20px;
+font:normal 20px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+float:right;
+text-align:right;
+margin:13px 0px 0px 0px;
+}
+
+.home-button a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:18px 10px 0px 10px;
+background:url(../img/320/home-icon.png) no-repeat;
+}
+
+.home-button a:hover 
+{
+background:url(../img/320/home-icon.png) 0px -32px no-repeat;
+}
+
+.about-pic 
+{
+display:block;
+position:relative;
+width:320px;
+height:119px;
+background:url(../img/320/about-pic.png) no-repeat;
+}
+
+
+.body-continer 
+{
+display:table;
+position:relative;
+width:280px;
+height:auto;
+min-height:100px;
+margin:10px auto 10px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.title-continer 
+{
+display:table;
+position:relative;
+width:290px;
+height:28px;
+font:normal 18px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:right;
+padding:8px 10px 0px 0px;
+line-height:20px;
+margin:10px auto 0px auto;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+
+.text-continer 
+{
+display:table;
+position:relative;
+width:280px;
+height:30px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+margin:0px 10px 0px 10px
+}
+
+/*---------------------- Contact Screen -----------------------*/
+
+.ucontact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:44px;
+margin:20px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:3px 3px 0px 0px;
+-moz-border-radius:3px 3px 0px 0px;
+border-radius:3px 3px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.econtact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.idcontact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.pcontact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.scontact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:46px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+border-bottom:none;
+-webkit-border-radius:0px 0px 0px 0px;
+-moz-border-radius:0px 0px 0px 0px;
+border-radius:0px 0px 0px 0px;
+background:url(../img/320/main-but.png) repeat-x;
+}
+
+.tcontact-continer 
+{
+display:block;
+position:relative;
+width:270px;
+height:100px;
+margin:-1px auto 0px auto;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.contact-textbox
+{
+display:block;
+position:relative;
+width:220px;
+height:40px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 40px 0px 0px;
+border:none;
+background:none;
+}
+
+.lcontact-textbox
+{
+display:block;
+position:relative;
+width:252px;
+height:90px;
+float:left;
+font:bold 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-align:right;
+direction:rtl;
+margin:0px 10px 0px 10px;
+border:none;
+overflow:hidden;
+background:none;
+}
+
+.name-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/user.png) no-repeat;
+}
+
+.email-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/email.png) no-repeat;
+}
+
+.id-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/id.png) no-repeat;
+}
+
+.phone-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/iphone.png) no-repeat;
+}
+
+.subject-icon 
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:right;
+margin:-33px 10px 0px 10px;
+background:url(../img/320/subject.png) no-repeat;
+}
+
+.enter-butt a
+{
+display:block;
+position:relative;
+width:262px;
+height:30px;
+font:normal 16px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-decoration:none;
+text-shadow: 0px 1px 2px #505050;
+text-align:left;
+line-height:22px;
+padding:10px 0px 0px 10px;
+margin:-1px auto 0px auto;
+-webkit-border-radius:0px 0px 3px 3px;
+-moz-border-radius:0px 0px 3px 3px;
+border-radius:0px 0px 3px 3px;
+border-bottom:solid 1px #146335;
+border-top:none;
+z-index:10;
+background:url(../img/320/green-but.png) repeat-x;
+}
+
+.enter-butt a:hover 
+{
+color:#fff;
+text-shadow: 0px 1px 1px #284635;
+background:url(../img/320/green-but.png) 0px -50px repeat-x;
+}
+
+.contact-pic 
+{
+display:block;
+position:relative;
+width:100%;
+height:119px;
+background:url(../img/320/contact-pic.png) no-repeat;
+}
+
+.contact-info-continer 
+{
+display:table;
+position:relative;
+width:100%;
+height:auto;
+min-height:40px;
+margin:-1px 0px 0px 0px;
+padding:5px 0px 0px 0px;
+opacity: 0.7;
+filter: alpha(opacity=70);
+border:solid 1px #fff;
+border-left:none;
+border-right:none;
+background:#171100 url(../img/320/social-media.png) no-repeat;
+}
+
+.contact-info-title
+{
+font:normal 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#fff;
+text-shadow: 0px 1px 2px #000;
+text-align:right;
+padding:0px 10px 2px 0px;
+}
+
+.contact-info-title span 
+{
+font:normal 14px Geneva, sans-serif;
+}
+
+.soical-info-continer 
+{
+display:table;
+position:relative;
+width:100%;
+height:auto;
+min-height:40px;
+margin:10px auto 10px auto;
+border:solid 1px #d9d5d2;
+border-right:none;
+border-left:none;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.facebook a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 10px;
+background:url(../img/320/facebook.png) no-repeat;
+}
+
+.facebook a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.twitter a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 47px;
+background:url(../img/320/twitter.png) no-repeat;
+}
+
+.twitter a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.instgram a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 83px;
+background:url(../img/320/instagram.png) no-repeat;
+}
+
+.instgram a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+.youtube a
+{
+display:block;
+position:relative;
+width:32px;
+height:32px;
+float:left;
+margin:-49px 0px 0px 120px;
+background:url(../img/320/youtube.png) no-repeat;
+}
+
+.youtube a:hover 
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+
+/*---------------------- Define Screen -----------------------*/
+
+
+.define-continer 
+{
+display:table;
+position:relative;
+width:290px;
+height:auto;
+min-height:400px;
+margin:10px auto 10px auto;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+border:solid 1px #d9d5d2;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+.define-title-continer 
+{
+display:block;
+position:relative;
+width:290px;
+height:30px;
+font:normal 14px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:right;
+padding:8px 10px 8px 0px;
+line-height:30px;
+margin:10px auto 0px auto;
+background:url(../img/320/body-continer.png) repeat;
+}
+
+
+.define-text-continer 
+{
+display:table;
+position:relative;
+width:280px;
+height:auto;
+min-height:20px;
+font:normal 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+padding:5px 0px 0px 0px;
+margin:0px 10px 0px 10px
+}
+
+.define-bold-text-continer 
+{
+display:table;
+position:relative;
+width:280px;
+height:auto;
+min-height:20px;
+font:bold 12px 'Droid Arabic Kufi', serif, Tahoma, Geneva, sans-serif;
+color:#48453c;
+text-align:justify;
+direction:rtl;
+padding:5px 10px 0px 0px;
+margin:0px 0px 0px 0px
+}
+
+
+}
+
