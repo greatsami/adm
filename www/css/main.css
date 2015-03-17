@@ -37,10 +37,20 @@ margin:0px;
 border:none;
 }
 
-placeholder 
+::-webkit-input-placeholder {color: #fff;}
+
+:-moz-placeholder { /* Firefox 18- */color: #fff;}
+
+::-moz-placeholder {  /* Firefox 19+ */color: #fff;}
+
+:-ms-input-placeholder {color: #fff;}
+
+ input[placeholder],[placeholder],*[placeholder] 
 {
-color:#48453c;
+color:#fff !important;
 }
+
+:focus {outline:none;}
 
 @font-face 
 {
@@ -584,7 +594,7 @@ background:url(../img/id.png) no-repeat;
 {
 display:block;
 position:relative;
-width:92%;
+width:80%;
 height:50px;
 float:right;
 font:normal 20px 'GEFlowRegular', serif, Tahoma, Geneva, sans-serif;
@@ -800,7 +810,7 @@ background:url(../img/body-continer.png) repeat;
 {
 display:block;
 position:relative;
-width:93%;
+width:80%;
 height:45px;
 font:normal 16px 'GEFlowRegular', serif, Tahoma, Geneva, sans-serif;
 color:#fff;
@@ -932,19 +942,6 @@ width:68.5%;
 height:30px;
 border:none;
 background:none;
-}
-
-::-webkit-input-placeholder {color: #fff;}
-
-:-moz-placeholder { /* Firefox 18- */color: #fff;}
-
-::-moz-placeholder {  /* Firefox 19+ */color: #fff;}
-
-:-ms-input-placeholder {color: #fff;}
-
- input[placeholder],[placeholder],*[placeholder] 
-{
-color:#fff !important;
 }
 
 .contact-pic 
