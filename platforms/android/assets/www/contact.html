@@ -8,11 +8,17 @@
 <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>هيئة تطوير مكة المكرمة</title>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/scrolltofixed.js"></script>
 <script src="js/stick.js"></script>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>
+<script src="js/messages_ar.js"></script>
+<script src="js/scripts.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
@@ -42,13 +48,18 @@
 <div class="instgram"><a href="http://instagram.com/makkahauthority"></a></div>
 <div class="youtube"><a href="http://www.youtube.com/user/makkahauthority"></a></div>
 
-<div class="ucontact-continer"><input id="Text2" type="text" class="contact-textbox" placeholder="الاسم" /><span class="name-icon"></span></div>
-<div class="econtact-continer"><input id="Text1" type="text" class="contact-textbox" placeholder="البريد الالكتروني" /><span class="email-icon"></span></div>
-<div class="idcontact-continer"><input id="Text3" type="text" class="contact-textbox" placeholder="رقم الهوية" /><span class="id-icon"></span></div>
-<div class="pcontact-continer"><input id="Text4" type="text" class="contact-textbox" placeholder="الجوال" /><span class="phone-icon"></span></div>
-<div class="scontact-continer"><input id="Text5" type="text" class="contact-textbox" placeholder="عنوان الرسالة" /><span class="subject-icon"></span></div>
-<div class="tcontact-continer"><textarea id="TextArea1" cols="20" rows="2" class="lcontact-textbox" placeholder=" الرسالة"></textarea></div>
-<div class="enter-butt"><a href="#"> <span class="arrow-go"></span><input id="Submit1" type="submit" value="" class="ebutton" />ارسال</a></div>
+
+<div id="errors"></div>
+
+<form method="post" id="contact-form">
+	<div class="ucontact-continer"><input id="user_name" name="user_name" type="text" class="contact-textbox" placeholder="الاسم" /><span class="name-icon"></span></div>
+	<div class="econtact-continer"><input id="user_email" name="user_email" type="text" class="contact-textbox" placeholder="البريد الالكتروني" /><span class="email-icon"></span></div>
+	<div class="idcontact-continer"><input id="user_id" name="user_id" type="text" class="contact-textbox" placeholder="رقم الهوية" /><span class="id-icon"></span></div>
+	<div class="pcontact-continer"><input id="user_mobile" name="user_mobile" type="text" class="contact-textbox" placeholder="الجوال" /><span class="phone-icon"></span></div>
+	<div class="scontact-continer"><input id="subject" name="subject" type="text" class="contact-textbox" placeholder="عنوان الرسالة" /><span class="subject-icon"></span></div>
+	<div class="tcontact-continer"><textarea id="content" name="content" cols="20" rows="2" class="lcontact-textbox" placeholder=" الرسالة"></textarea></div>
+	<div class="enter-butt"><a href="#"> <span class="arrow-go"></span><input id="Submit1" type="submit" value="" class="ebutton" />ارسال</a></div>
+</form>
 
 <div class="footer">جميع الحقوق محفوظة لهيئة تطوير مكة المكرمة 2015</div>
 </body>
