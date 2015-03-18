@@ -10,7 +10,23 @@ $().ready(function() {
 			content: { required: true }
 		},
 		submitHandler: function() {
-			alert('submitted!');
+			var ajax_call = 'http://www.adm.gov.sa/mobile_app/sendEmail.php';
+			var form_data = $('#contact-form').serializeArray();
+			$.ajax({
+				type: "POST",
+				url: ajax_call,
+				data: form_data,
+				dataType: "html",
+				success: function(response) {
+					//called when successful
+					alert('submitted!');
+				},
+				error: function(e) {
+					//called when there is an error
+					console.log(e.message);
+				}
+			});
+			
 		},
 		onkeyup: false
 	});
