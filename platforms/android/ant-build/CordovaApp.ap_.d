@@ -104,8 +104,10 @@ C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\img\640\inquiry-pic
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\img\960\about-pic.png \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\img\960\contact-pic.png \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\img\960\inquiry-pic.png \
+C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\additional-methods.min.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\classie.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\jquery.min.js \
+C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\jquery.validate.min.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\main.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\messages_ar.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\modernizr.custom.js \
@@ -113,5 +115,4 @@ C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\pathLoader.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\scripts.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\scrolltofixed.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\stick.js \
-C:\xampp\htdocs\mobiles_app\adm\platforms\android\assets\www\js\__jquery.min.js \
 C:\xampp\htdocs\mobiles_app\adm\platforms\android\ant-build\AndroidManifest.xml \
