@@ -25,7 +25,7 @@ $().ready(function() {
 					//called when successful
 					// alert('submitted!');
 					$('html,body').animate({scrollTop: $("#theTop").offset().top},'slow');	
-					$('#message').html("<div class=\"success_msg\"><p>تم إرسال الرسالة، سيتم التواصل معكم قريباً.</p></div>");
+					$('#message').html("<div class=\"successwoicon_msg\"><p>تم إرسال الرسالة، سيتم التواصل معكم قريباً.</p></div>");
 					$('#contact-form')[0].reset();
 				},
 				error: function(e) {

@@ -57,6 +57,7 @@ color:#b20000;
 	background-repeat: no-repeat;
 	background-position: 98% center;
 	border-radius:4px;
+	direction: rtl;
 }
 
 .infowoicon_msg, .successwoicon_msg, .warningwoicon_msg, .errorwoicon_msg, .validationwoicon_msg {
@@ -67,6 +68,7 @@ color:#b20000;
 	background-repeat: no-repeat;
 	background-position: 2% center;
 	border-radius:4px;
+	direction: rtl;
 }
 
 .info_msg {
