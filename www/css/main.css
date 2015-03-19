@@ -45,6 +45,83 @@ font:normal 14px 'GEFlowRegular', serif, Tahoma, Geneva, sans-serif;
 color:#b20000;
 }
 
+/* NOTES
+================================================== */
+/* Messages .info, .success, .warning, .error, .validation
+----------------------------------------------- */
+.info_msg, .success_msg, .warning_msg, .error_msg, .validation_msg {
+	width: auto;
+	border: 1px solid;
+	margin: 0;
+	padding:15px 50px 15px 0px;
+	background-repeat: no-repeat;
+	background-position: 98% center;
+	border-radius:4px;
+}
+
+.infowoicon_msg, .successwoicon_msg, .warningwoicon_msg, .errorwoicon_msg, .validationwoicon_msg {
+	width: auto;
+	border: 1px solid;
+	margin: 0;
+	padding:15px 10px;
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	border-radius:4px;
+}
+
+.info_msg {
+	color: #00529B;
+	background-color: #BDE5F8;
+	background-image: url(../../img/icons/information.png);
+}
+.infowoicon_msg {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+.success_msg {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url(../../img/icons/accept.png);
+}
+.successwoicon_msg {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+.warning_msg {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url(../../img/icons/error.png);
+}
+.warningwoicon_msg {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+.error_msg {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url(../../img/icons/exclamation.png);
+}
+.errorwoicon_msg {
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+.validation_msg {
+	color: #D63301;
+	background-color: #FFCCBA;
+	background-image: url(../../img/icons/error.png);
+}
+.validationwoicon_msg {
+	color: #D63301;
+	background-color: #FFCCBA;
+}
+
+
+
+
+
+
+
+
 ::-webkit-input-error {color: #fff;}
 
 :-moz-error { /* Firefox 18- */color: #fff;}

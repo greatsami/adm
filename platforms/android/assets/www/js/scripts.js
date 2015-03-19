@@ -9,6 +9,10 @@ $().ready(function() {
 			subject: { required: true }, 
 			content: { required: true }
 		},
+		messages: {
+			user_id: { number: "الرجاء إدخال رقم الهوية بشكل صحيح", minlength: "الرجاء إدخال رقم الهوية بشكل صحيح", maxlength: "الرجاء إدخال رقم الهوية بشكل صحيح" }, 
+			user_mobile: { number: "الرجاء إدخال رقم الجوال بشكل صحيح", minlength: "الرجاء إدخال رقم الجوال بشكل صحيح", maxlength: "الرجاء إدخال رقم الجوال بشكل صحيح" }
+		}, 
 		submitHandler: function() {
 			var ajax_call = 'http://www.adm.gov.sa/mobile_app/sendEmail.php';
 			var form_data = $('#contact-form').serializeArray();
@@ -19,7 +23,10 @@ $().ready(function() {
 				dataType: "html",
 				success: function(response) {
 					//called when successful
-					alert('submitted!');
+					// alert('submitted!');
+					$('html,body').animate({scrollTop: $("#theTop").offset().top},'slow');	
+					$('#message').html("<div class=\"success_msg\"><p>تم إرسال الرسالة، سيتم التواصل معكم قريباً.</p></div>");
+					$('#contact-form')[0].reset();
 				},
 				error: function(e) {
 					//called when there is an error
