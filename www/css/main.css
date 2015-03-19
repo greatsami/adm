@@ -37,6 +37,23 @@ margin:0px;
 border:none;
 }
 
+
+
+.error 
+{
+font:normal 14px 'GEFlowRegular', serif, Tahoma, Geneva, sans-serif;
+color:#b20000;
+}
+
+::-webkit-input-error {color: #fff;}
+
+:-moz-error { /* Firefox 18- */color: #fff;}
+
+::-moz-error {  /* Firefox 19+ */color: #fff;}
+
+:-ms-input-error {color: #fff;}
+
+
 ::-webkit-input-placeholder {color: #fff;}
 
 :-moz-placeholder { /* Firefox 18- */color: #fff;}
@@ -1061,6 +1078,7 @@ background:url(../img/youtube.png) no-repeat;
 opacity: 0.8;
 filter: alpha(opacity=80);
 }
+
 
 /*---------------------- Define Screen -----------------------*/
 
